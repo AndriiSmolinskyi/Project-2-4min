@@ -1,0 +1,28 @@
+@mixin flex-align(){
+    display: flex;
+    align-items: center;
+}
+
+@mixin font($fs, $fw, $fc){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc;
+}
+
+
+$screen-md-min: 780px;
+
+@mixin md {
+    @media (max-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+
+$screen-md-sm: 670px;
+
+@mixin md-ms {
+    @media (max-width: #{$screen-md-sm}) {
+        @content;
+    }
+}

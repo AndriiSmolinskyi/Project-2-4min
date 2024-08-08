@@ -1,0 +1,122 @@
+@import 'mixin';
+@import 'var';
+
+body{
+    font-family: sans-serif;
+}
+
+.wrapper{
+    max-width: 1170px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.header{
+    @include flex-align;
+    justify-content: space-between;
+    padding: 16px 0px;
+    position: relative;
+
+    .header__left{
+        @include flex-align;
+        gap: 14px;
+
+        .header__left__logo{
+            width: 38px;
+            height: 47.5px;
+        }
+
+        .header__left__text{
+            @include font(30px, 700, $blue);
+        }
+    }
+
+    .header__nav{
+
+        .header__nav__list{
+            display: flex;
+            gap: 50px;
+
+            @include md{
+               gap: 25px;
+            }
+            
+            @include md-ms{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                left: 50%; /* Центрування по горизонталі */
+                transform: translateX(-50%); /* Зсув для вирівнювання по центру */
+                z-index: 10;
+            }
+
+            .header__nav__list__item{
+                @include font(18px, 400, black);
+
+                &:hover{
+                    cursor: pointer;
+                    color: $orange;
+                }
+            }
+        }
+
+        .burger{
+            @media screen and (min-width: 671px){
+                display: none !important; 
+            }
+
+            @include md-ms{
+                display: inline-block;
+                font-size: 30px;
+            }
+        }
+
+        .close{
+            @media screen and (min-width: 671px){
+                display: none !important; 
+            }
+
+            @include md-ms{
+                display: none;
+                font-size: 30px;
+            }
+        }
+
+    }
+
+}
+
+
+
+.first__bg {
+    width: 100%;
+    height: 100vh; /* Це встановить висоту рівною висоті вікна браузера */
+    background-image: url('/img/slider1/1.jpg');
+    background-size: cover; /* Зображення буде масштабуватися, щоб повністю покрити фон */
+    background-position: center; /* Зображення буде центроване */
+    background-repeat: no-repeat; /* Забороняє повторення зображення */
+    position: relative;
+
+    .first__block{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.first{
+    display: flex;
+    padding-top: 250px;
+
+    .frist__text{
+        @include font(72px, 600, rgb(41, 46, 61));
+        max-width: 556px;
+    }
+}
+
+
+.first__block__btn{
+    cursor: pointer;
+}
