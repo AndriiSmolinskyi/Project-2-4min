@@ -130,7 +130,177 @@ body {
   color: rgb(41, 46, 61);
   max-width: 556px;
 }
+@media screen and (max-width: 580px) {
+  .first .frist__text {
+    font-size: 48px;
+  }
+}
 
 .first__block__btn {
   cursor: pointer;
+}
+
+.six {
+  padding: 90px 0px 120px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 980px) {
+  .six {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+}
+.six .six__left .six__left__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 40px;
+}
+.six .six__left .six__left__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.six .six__left .six__left__list .six__left__list__item {
+  margin-left: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(194, 199, 214);
+  position: relative;
+}
+.six .six__left .six__left__list .six__left__list__item::before {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: -2px;
+  width: 4px;
+  height: 28px;
+  background-color: rgb(41, 71, 169);
+  display: none;
+}
+.six .six__left .six__left__list .six__left__list__item:hover {
+  color: rgb(41, 71, 169);
+  cursor: pointer;
+}
+.six .six__left .six__left__list .six__left__list__item:hover::before {
+  display: inline-block;
+}
+.six .six__right {
+  padding-top: 100px;
+  max-width: 760px;
+}
+@media screen and (max-width: 980px) {
+  .six .six__right {
+    margin: 0 auto;
+  }
+}
+.six .six__right .six__right__up {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 32px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 32px;
+}
+@media screen and (max-width: 620px) {
+  .six .six__right .six__right__up {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+.six .six__right .six__right__up .six__right__up__item .six__right__up__item__img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 247px;
+}
+@media screen and (max-width: 980px) {
+  .six .six__right .six__right__up .six__right__up__item .six__right__up__item__img {
+    height: 220px;
+  }
+}
+.six .six__right .six__right__up .six__right__up__item .six__right__up__item__text {
+  margin: 0;
+  background-color: rgb(41, 71, 169);
+  padding: 12px;
+}
+.six .six__right .six__right__up .six__right__up__item .six__right__up__item__text .six__right__up__item__text__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+}
+.six .six__right .six__right__up .six__right__up__item .six__right__up__item__text .six__right__up__item__text__par {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+@media screen and (max-width: 980px) {
+  .six .six__right .six__right__up .six__right__up__item .six__right__up__item__text .six__right__up__item__text__par {
+    font-size: 14px;
+  }
+}
+.six .six__right .six__right__down {
+  width: 100%;
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+.six .six__right .six__right__down .six__right__down__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  background-color: rgb(41, 46, 61);
+  width: 295px;
+  height: 64px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+@media screen and (max-width: 650px) {
+  .six .six__right .six__right__down .six__right__down__item {
+    width: 230px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .six .six__right .six__right__down .six__right__down__item {
+    width: 130px;
+    height: 40px;
+  }
+}
+.six .six__right .six__right__down .six__right__down__item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.9;
 }
