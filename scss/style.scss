@@ -49,10 +49,13 @@ body {
         align-items: center;
         flex-direction: column;
         position: absolute;
-        top: 80px;
+        top: 78px;
         left: 50%; /* Центрування по горизонталі */
         transform: translateX(-50%); /* Зсув для вирівнювання по центру */
         z-index: 10;
+        background-color: white;
+        width: 100vh;
+        padding: 25px 0px;
       }
 
       .header__nav__list__item {
@@ -102,6 +105,39 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+    width: 416px;
+    height: 130px;
+
+    @media screen and (max-width: 415px) {
+        width: 320px;
+
+    }
+
+    .first__block__up{
+        background-color: $blue;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font(20px, 700, white)
+    }
+
+    .first__block__down{
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+
+        .first__block__btn{
+            width: 49.8%;
+            background-color: $darkGrey;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            @include font(14px, 400, white);
+        }
+    }
   }
 }
 
@@ -137,8 +173,13 @@ body {
   .second__content {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
     width: 100%;
+
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
+        align-items: center;
+    }
 
     .second__content__item {
       max-width: 292px;
@@ -146,6 +187,23 @@ body {
       padding: 20px;
       border: 1.4px solid rgb(224, 227, 235);
       border-radius: 4px;
+
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+        opacity: 0.8;
+      }
+
+      .second__content__item__title{
+        @include font(20px, 700, black);
+        margin-bottom: 18px;
+        margin-top: 16px;
+      }
+
+      .second__content__item__par{
+        @include font(16px, 400, rgb(133, 142, 173));
+      }
+
     }
   }
   

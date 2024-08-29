@@ -83,6 +83,12 @@ const slides = [
         {img: 'img/slider2/slider2_2/second2.jpg', title: 'Hi tech design', text: '2972 San-Franciso Rd. Santa, Califronia'},
         {img: 'img/slider2/slider2_2/second3.jpg', title: 'New era house', text: '2072 Los Angeles Rd. Santa, Califronia'},
         {img: 'img/slider2/slider2_2/second4.webp', title: 'Rich big house', text: '2072 Dallas Rd. Santa Ana, Texas'},
+    ],
+    [
+        {img: 'img/slider2/slider2_3/third1.webp', title: 'Hi tech house', text: '24020 Royal Ln. Mesa, New Jersey'},
+        {img: 'img/slider2/slider2_3/third2.jpg', title: 'Hi tech apart', text: '24400 Kingd Ln. Mesa, New Ohio'},
+        {img: 'img/slider2/slider2_3/third3.jpg', title: 'Post moden ap', text: '19202 Buckin Bg. Dom, New Orlean'},
+        {img: 'img/slider2/slider2_3/third4.jpg', title: 'Hi tech pent', text: '14020 Royal Los Ang, Califronia'}
     ]
 ]
 

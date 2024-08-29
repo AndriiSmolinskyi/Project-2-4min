@@ -69,11 +69,14 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 78px;
     left: 50%; /* Центрування по горизонталі */
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); /* Зсув для вирівнювання по центру */
     z-index: 10;
+    background-color: white;
+    width: 100vh;
+    padding: 25px 0px;
   }
 }
 .header .header__nav .header__nav__list .header__nav__list__item {
@@ -121,6 +124,56 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
+  width: 416px;
+  height: 130px;
+}
+@media screen and (max-width: 415px) {
+  .first__bg .first__block {
+    width: 320px;
+  }
+}
+.first__bg .first__block .first__block__up {
+  background-color: rgb(41, 71, 169);
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.first__bg .first__block .first__block__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+}
+.first__bg .first__block .first__block__down .first__block__btn {
+  width: 49.8%;
+  background-color: rgb(41, 46, 61);
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
 }
 
 .first {
@@ -171,8 +224,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
   width: 100%;
+}
+@media screen and (max-width: 850px) {
+  .second .second__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .second .second__content .second__content__item {
   max-width: 292px;
@@ -180,6 +244,24 @@ body {
   padding: 20px;
   border: 1.4px solid rgb(224, 227, 235);
   border-radius: 4px;
+}
+.second .second__content .second__content__item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.8;
+}
+.second .second__content .second__content__item .second__content__item__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 18px;
+  margin-top: 16px;
+}
+.second .second__content .second__content__item .second__content__item__par {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(133, 142, 173);
 }
 
 .six {
