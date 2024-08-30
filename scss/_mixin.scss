@@ -3,6 +3,12 @@
     align-items: center;
 }
 
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin font($fs, $fw, $fc){
     font-size: $fs;
     font-weight: $fw;

@@ -2,6 +2,8 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 body {
@@ -26,6 +28,17 @@ body {
           justify-content: space-between;
   padding: 16px 0px;
   position: relative;
+}
+@media (max-width: 670px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    padding: 16px 15px;
+  }
 }
 .header .header__left {
   display: -webkit-box;
@@ -262,6 +275,183 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: rgb(133, 142, 173);
+}
+
+.third {
+  padding: 74px 0px 202px 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .third {
+    padding: 50px 0px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .third {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.third .third__img {
+  max-width: 902px;
+}
+@media screen and (max-width: 1024px) {
+  .third .third__img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .third .third__img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .third .third__img {
+    display: none;
+  }
+}
+.third .third__text {
+  background-color: rgb(41, 71, 169);
+  padding: 55px 40px;
+  max-width: 488px;
+  position: absolute;
+  right: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+@media screen and (max-width: 900px) {
+  .third .third__text {
+    position: sticky;
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    right: auto;
+  }
+}
+.third .third__text .third__text__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 35px;
+}
+.third .third__text .third__text__par {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+.third .third__text .third__text__par:first-of-type {
+  margin-bottom: 25px;
+}
+.third .third__text .third__text__par:nth-of-type(2) {
+  margin-bottom: 73px;
+}
+.third .third__text .third__text__btn {
+  width: 216px;
+  height: 53px;
+  border: 2px solid rgb(41, 71, 169);
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(41, 71, 169);
+}
+.third .third__text .third__text__btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.four-bg {
+  background-color: rgb(246, 248, 247);
+}
+
+.four {
+  padding: 44px 0px 76px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.four .four__title {
+  font-size: 42px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 32px;
+}
+.four .four__table {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50px 1fr 50px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+@media screen and (max-width: 940px) {
+  .four .four__table {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 610px) {
+  .four .four__table {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+.four .four__table .four__table__item {
+  width: 271px;
+  height: 181px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+          box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+.four .four__table .four__table__item .four__table__item__line {
+  width: 60px;
+  height: 2px;
+  background: rgb(224, 227, 235);
+}
+.four .four__table .four__table__item:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.four .four__table .four__table__item:nth-child(odd) {
+  background-color: white;
+  color: rgb(41, 71, 169);
+}
+.four .four__table .four__table__item:nth-child(even) {
+  background-color: rgb(41, 71, 169);
+  color: white;
 }
 
 .six {
