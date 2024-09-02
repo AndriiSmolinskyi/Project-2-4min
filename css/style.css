@@ -962,3 +962,186 @@ body {
   border: 2px solid rgb(41, 71, 169);
   color: rgb(41, 71, 169);
 }
+
+.footer {
+  padding: 85px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 860px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 35px;
+  }
+}
+.footer .footer__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 36px;
+}
+.footer .footer__left .footer__left__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.footer .footer__left .footer__left__table .footer__left__table__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .footer__left .footer__left__table .footer__left__table__item .footer__left__table__item__title {
+  width: 90px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(41, 71, 169);
+}
+.footer .footer__left .footer__left__table .footer__left__table__item .footer__left__table__item__text {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+.footer .footer__left .footer__left__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+.footer .footer__left .footer__left__logo .footer__left__logo__img {
+  width: 38px;
+  height: 47.5px;
+}
+.footer .footer__left .footer__left__logo .footer__left__logo__text {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(41, 71, 169);
+}
+.footer .footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 42px;
+}
+.footer .footer__right .footer__right__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 19px;
+}
+.footer .footer__right .footer__right__item .footer__right__item__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(41, 71, 169);
+}
+.footer .footer__right .footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+@media screen and (max-width: 460px) {
+  .footer .footer__right .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 19px;
+    width: 100%;
+  }
+}
+.footer .footer__right .footer__form .footer__right__item__block__input {
+  border: 1px solid rgb(224, 227, 235);
+  border-radius: 4px;
+  width: 280px;
+  height: 41px;
+  padding: 10px 8px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(163, 170, 194);
+}
+@media screen and (max-width: 460px) {
+  .footer .footer__right .footer__form .footer__right__item__block__input {
+    width: 100%;
+  }
+}
+.footer .footer__right .footer__form .footer__right__item__block__btn {
+  border: none;
+  width: 136px;
+  height: 41px;
+  border-radius: 4px;
+  background: rgb(249, 153, 93);
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+@media screen and (max-width: 460px) {
+  .footer .footer__right .footer__form .footer__right__item__block__btn {
+    width: 50%;
+  }
+}
+.footer .footer__right .footer__form .footer__right__item__block__btn:hover {
+  cursor: pointer;
+  border: 2px solid rgb(249, 153, 93);
+  color: rgb(249, 153, 93);
+  background-color: transparent;
+}
+.footer .footer__right .footer__socials {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(41, 46, 61);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.footer .footer__right .footer__socials .footer__right__item__block__soc:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.copy-Bg {
+  background-color: rgb(41, 71, 169);
+}
+
+.copy {
+  padding: 26px 0px;
+}
+.copy .copy__text {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  line-height: 20px;
+}

@@ -708,11 +708,11 @@ body {
     @include flexDirection(20px);
     align-items: center;
 
-    @media screen and (max-width: 540px){
+    @media screen and (max-width: 540px) {
       width: 100%;
     }
 
-    .seven__input{
+    .seven__input {
       border: 1px solid rgb(224, 227, 235);
       border-radius: 4px;
       background: rgb(255, 255, 255);
@@ -724,7 +724,7 @@ body {
       @include flexJustify;
       gap: 32px;
 
-      @media screen and (max-width: 540px){
+      @media screen and (max-width: 540px) {
         @include flexDirection(20px);
         width: 100%;
       }
@@ -733,20 +733,18 @@ body {
         width: 48.5%;
         height: 41px;
 
-        @media screen and (max-width: 540px){
+        @media screen and (max-width: 540px) {
           width: 100%;
         }
-  
       }
-   
     }
 
-    .seven__form__are{
+    .seven__form__are {
       width: 100%;
       height: 135px;
     }
 
-    .seven__form__btn{
+    .seven__form__btn {
       margin-top: 15px;
       border: none;
       border-radius: 2px;
@@ -755,15 +753,139 @@ body {
       height: 53px;
       @include font(18px, 600, white);
 
-      &:hover{
+      &:hover {
         cursor: pointer;
         background-color: transparent;
         border: 2px solid $blue;
         color: $blue;
       }
     }
+  }
+}
 
+.footer {
+  padding: 85px 0px;
+  @include flexJustify;
 
+  @media screen and (max-width: 860px){
+    @include flexDirection(35px);
   }
 
+  .footer__left {
+    @include flexDirection(36px);
+
+    .footer__left__table {
+      @include flexDirection(32px);
+
+      .footer__left__table__item {
+        display: flex;
+
+        .footer__left__table__item__title {
+          width: 90px;
+          @include font(20px, 500, $blue);
+        }
+
+        .footer__left__table__item__text {
+          @include font(20px, 400, black);
+        }
+      }
+    }
+
+    .footer__left__logo {
+      @include flex-align;
+      gap: 14px;
+
+      .footer__left__logo__img {
+        width: 38px;
+        height: 47.5px;
+      }
+
+      .footer__left__logo__text {
+        @include font(30px, 700, $blue);
+      }
+    }
+  }
+
+  .footer__right {
+    @include flexDirection(42px);
+
+    .footer__right__item {
+      @include flexDirection(19px);
+
+      .footer__right__item__title {
+        @include font(20px, 500, $blue);
+      }
+    }
+
+    .footer__form {
+      display: flex;
+      gap: 8px;
+
+      @media screen and (max-width: 460px){
+        @include flexDirection(19px);
+        width: 100%;
+      }
+
+      .footer__right__item__block__input {
+        border: 1px solid rgb(224, 227, 235);
+        border-radius: 4px;
+        width: 280px;
+        height: 41px;
+        padding: 10px 8px;
+        @include font(18px, 400, rgb(163, 170, 194));
+
+        @media screen and (max-width: 460px){
+          width: 100%;
+        }
+      }
+
+      .footer__right__item__block__btn {
+        border: none;
+        width: 136px;
+        height: 41px;
+        border-radius: 4px;
+        background: rgb(249, 153, 93);
+        @include font(18px, 600, white);
+
+        @media screen and (max-width: 460px){
+          width: 50%;
+        }
+
+        &:hover{
+          cursor: pointer;
+          border: 2px solid rgb(249, 153, 93);
+          color: rgb(249, 153, 93);
+          background-color: transparent;
+        }
+      }
+    }
+
+    .footer__socials{
+      @include font(40px, 600, $darkGrey);
+      display: flex;
+      gap: 20px;
+
+      .footer__right__item__block__soc{
+
+        &:hover{
+          cursor: pointer;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+
+.copy-Bg{
+  background-color: $blue;
+}
+
+.copy{
+  padding: 26px 0px;
+
+  .copy__text{
+    @include font(16px, 500, white);
+    line-height: 20px;
+  }
 }
