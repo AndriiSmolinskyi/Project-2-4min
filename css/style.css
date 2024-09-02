@@ -127,7 +127,7 @@ body {
 .first__bg {
   width: 100%;
   height: 100vh; /* Це встановить висоту рівною висоті вікна браузера */
-  background-image: url("img/slider1/1.jpg");
+  background-image: url(img/slider1/1.jpg);
   background-size: cover; /* Зображення буде масштабуватися, щоб повністю покрити фон */
   background-position: center; /* Зображення буде центроване */
   background-repeat: no-repeat; /* Забороняє повторення зображення */
