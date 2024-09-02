@@ -630,7 +630,7 @@ body {
 .mid__bg {
   width: 100%;
   padding: 100px 0px;
-  background-image: url(/img/midbg.jpg);
+  background-image: url("https://raw.githubusercontent.com/AndriiSmolinskyi/Project-2-4min/main/img/midbg.jpg");
   background-size: cover; /* Зображення буде масштабуватися, щоб повністю покрити фон */
   background-position: center; /* Зображення буде центроване */
   background-repeat: no-repeat; /* Забороняє повторення зображення */
