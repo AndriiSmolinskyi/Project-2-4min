@@ -378,14 +378,14 @@ body {
       flex-direction: column;
       padding-left: 10%;
     }
-    
+
     @media screen and (max-width: 680px) {
       width: 100%;
       padding: 0;
       gap: 35px;
       align-items: center;
     }
-  
+
     .five__left__item {
       padding: 30px;
       border: 1px solid rgb(255, 255, 255);
@@ -449,12 +449,11 @@ body {
       }
     }
 
-    .five__left__item{
+    .five__left__item {
       @media screen and (max-width: 680px) {
         margin: 0px;
       }
     }
-
   }
 
   .five__right {
@@ -464,8 +463,6 @@ body {
     @media screen and (max-width: 980px) {
       width: 100%;
     }
-  
-  
 
     .five__right__title {
       @include font(60px, 700, $blue);
@@ -479,8 +476,6 @@ body {
         width: 100%;
         font-size: 42px;
       }
-    
-    
     }
 
     .five__right__text {
@@ -496,7 +491,7 @@ body {
       background-color: $blue;
       @include font(18px, 600, white);
 
-      &:hover{
+      &:hover {
         background-color: white;
         color: $blue;
         border: 2px solid $blue;
@@ -506,8 +501,7 @@ body {
   }
 }
 
-.mid-bg{
-  
+.mid-bg {
 }
 
 .six {
