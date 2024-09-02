@@ -1,7 +1,7 @@
 @import "mixin";
 @import "var";
 
-*{
+* {
   box-sizing: border-box;
   transition: all 0.3s ease;
 }
@@ -24,10 +24,10 @@ body {
 
   @include md-ms {
     position: fixed;
-    top: 0;  
-    left: 0;   
-    right: 0;  
-    z-index: 1000; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     background-color: white;
     padding: 16px 15px;
   }
@@ -120,34 +120,33 @@ body {
     height: 130px;
 
     @media screen and (max-width: 415px) {
-        width: 320px;
-
+      width: 320px;
     }
 
-    .first__block__up{
-        background-color: $blue;
-        height: 90px;
+    .first__block__up {
+      background-color: $blue;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include font(20px, 700, white);
+    }
+
+    .first__block__down {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+
+      .first__block__btn {
+        width: 49.8%;
+        background-color: $darkGrey;
+        height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-        @include font(20px, 700, white)
-    }
-
-    .first__block__down{
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-
-        .first__block__btn{
-            width: 49.8%;
-            background-color: $darkGrey;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-            @include font(14px, 400, white);
-        }
+        gap: 5px;
+        @include font(14px, 400, white);
+      }
     }
   }
 }
@@ -188,8 +187,8 @@ body {
     width: 100%;
 
     @media screen and (max-width: 850px) {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
 
     .second__content__item {
@@ -199,28 +198,26 @@ body {
       border: 1.4px solid rgb(224, 227, 235);
       border-radius: 4px;
 
-      &:hover{
+      &:hover {
         cursor: pointer;
         transform: scale(1.05);
         opacity: 0.8;
       }
 
-      .second__content__item__title{
+      .second__content__item__title {
         @include font(20px, 700, black);
         margin-bottom: 18px;
         margin-top: 16px;
       }
 
-      .second__content__item__par{
+      .second__content__item__par {
         @include font(16px, 400, rgb(133, 142, 173));
       }
-
     }
   }
-  
 }
 
-.third{
+.third {
   padding: 74px 0px 202px 0px;
   position: relative;
   display: flex;
@@ -233,10 +230,10 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  
-  .third__img{
+
+  .third__img {
     max-width: 902px;
-    
+
     @media screen and (max-width: 1024px) {
       width: 90%;
     }
@@ -250,7 +247,7 @@ body {
     }
   }
 
-  .third__text{
+  .third__text {
     background-color: $blue;
     padding: 55px 40px;
     max-width: 488px;
@@ -261,17 +258,17 @@ body {
     @media screen and (max-width: 900px) {
       position: sticky;
       align-self: auto;
-      right:auto;
+      right: auto;
     }
 
-    .third__text__title{
+    .third__text__title {
       @include font(36px, 700, white);
       margin-bottom: 35px;
     }
 
     .third__text__par {
       @include font(20px, 400, white);
-      
+
       &:first-of-type {
         margin-bottom: 25px;
       }
@@ -281,85 +278,236 @@ body {
       }
     }
 
-    .third__text__btn{
+    .third__text__btn {
       width: 216px;
       height: 53px;
       border: 2px solid $blue;
       border-radius: 6px;
       @include font(18px, 600, $blue);
 
-      &:hover{
+      &:hover {
         cursor: pointer;
         opacity: 0.9;
       }
     }
- 
   }
-
 }
 
-.four-bg{
+.four-bg {
   background-color: $lighGrey;
 }
 
-.four{
+.four {
   padding: 44px 0px 76px 0px;
   @include flex-align;
   flex-direction: column;
 
-  .four__title{
+  .four__title {
     @include font(42px, 700, black);
     margin-bottom: 32px;
   }
 
-  .four__table{
+  .four__table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
 
-    @media screen and (max-width: 940px){
+    @media screen and (max-width: 940px) {
       grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 610px){
+    @media screen and (max-width: 610px) {
       grid-template-columns: 1fr;
     }
 
-
-    .four__table__item{
+    .four__table__item {
       width: 271px;
       height: 181px;
       @include flexCenter;
       flex-direction: column;
       gap: 20px;
       border-radius: 4px;
-      box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05); 
+      box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
       @include font(20px, 700, black);
 
-      .four__table__item__line{
+      .four__table__item__line {
         width: 60px;
         height: 2px;
         background: rgb(224, 227, 235);
       }
 
-      &:hover{
+      &:hover {
         cursor: pointer;
         opacity: 0.9;
         transform: scale(1.05);
       }
     }
 
-    .four__table__item:nth-child(odd){
+    .four__table__item:nth-child(odd) {
       background-color: white;
       color: $blue;
     }
 
-    .four__table__item:nth-child(even){
+    .four__table__item:nth-child(even) {
       background-color: $blue;
       color: white;
     }
   }
+}
 
+.five {
+  padding: 110px 0px 100px 0px;
+  @include flexJustify;
+  align-items: center;
+
+  @media screen and (max-width: 980px) {
+    @include flexDirection(40px);
+    align-items: center;
+  }
+
+  @media screen and (max-width: 580px) {
+    padding-bottom: 35px;
+  }
+
+  .five__left {
+    width: 75%;
+
+    @media screen and (max-width: 980px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-left: 10%;
+    }
+    
+    @media screen and (max-width: 680px) {
+      width: 100%;
+      padding: 0;
+      gap: 35px;
+      align-items: center;
+    }
+  
+    .five__left__item {
+      padding: 30px;
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 4px;
+      box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05),
+        0px 12px 16px -4px rgba(17, 24, 39, 0.1);
+      position: relative;
+
+      .five__left__item__img {
+        position: absolute;
+      }
+
+      .five__left__item__title {
+        @include font(72px, 600, black);
+        margin-bottom: 10px;
+      }
+
+      .five__left__item__text {
+        display: flex;
+        padding-left: 16px;
+        gap: 12px;
+
+        .five__left__item__par {
+          @include font(24px, 400, rgb(102, 114, 153));
+        }
+      }
+    }
+
+    .five-item1 {
+      max-width: 280px;
+      margin-left: 300px;
+    }
+
+    .five-item2 {
+      max-width: 361px;
+      margin-top: -30px;
+    }
+
+    .five-item3 {
+      max-width: 276px;
+      margin-left: 246px;
+      margin-top: -15px;
+    }
+
+    .five-item4 {
+      max-width: 333px;
+      margin-left: 40px;
+    }
+
+    .five__left__item:nth-child(odd) {
+      .five__left__item__img {
+        top: -25%;
+        right: -10%;
+      }
+    }
+
+    .five__left__item:nth-child(even) {
+      .five__left__item__img {
+        top: -25%;
+        left: -10%;
+      }
+    }
+
+    .five__left__item{
+      @media screen and (max-width: 680px) {
+        margin: 0px;
+      }
+    }
+
+  }
+
+  .five__right {
+    max-width: 360px;
+    @include flexDirection(35px);
+
+    @media screen and (max-width: 980px) {
+      width: 100%;
+    }
+  
+  
+
+    .five__right__title {
+      @include font(60px, 700, $blue);
+
+      @media screen and (max-width: 680px) {
+        width: 100%;
+        font-size: 52px;
+      }
+
+      @media screen and (max-width: 380px) {
+        width: 100%;
+        font-size: 42px;
+      }
+    
+    
+    }
+
+    .five__right__text {
+      @include font(20px, 400, rgb(82, 91, 122));
+      line-height: 23px;
+    }
+
+    .five__right__button {
+      width: 176px;
+      height: 53px;
+      border: none;
+      border-radius: 2px;
+      background-color: $blue;
+      @include font(18px, 600, white);
+
+      &:hover{
+        background-color: white;
+        color: $blue;
+        border: 2px solid $blue;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.mid-bg{
+  
 }
 
 .six {

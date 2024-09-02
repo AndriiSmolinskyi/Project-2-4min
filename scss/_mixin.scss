@@ -9,6 +9,17 @@
     align-items: center;
 }
 
+@mixin flexJustify(){
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flexDirection($gap){
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
 @mixin font($fs, $fw, $fc){
     font-size: $fs;
     font-weight: $fw;
