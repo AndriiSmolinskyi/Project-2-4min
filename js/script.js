@@ -38,9 +38,9 @@ const next = document.querySelector(".btn__next")
 const firstBg = document.querySelector(".first__bg")
 
 const images = [
-    '/img/slider1/1.jpg',
-    '/img/slider1/2.jpg',
-    '/img/slider1/3.jpg'
+    'img/slider1/1.jpg',
+    'img/slider1/2.jpg',
+    'img/slider1/3.jpg'
 ]
 
 let currentIndex = 0;
