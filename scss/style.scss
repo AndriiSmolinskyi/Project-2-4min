@@ -504,42 +504,44 @@ body {
 .mid__bg {
   width: 100%;
   padding: 100px 0px;
-  background-image: url(../img/midbg.jpg);
+  background-image: url(../img/midbg.png);
   background-size: cover; /* Зображення буде масштабуватися, щоб повністю покрити фон */
   background-position: center; /* Зображення буде центроване */
   background-repeat: no-repeat; /* Забороняє повторення зображення */
 
-  .mid {
-    @include flexJustify;
+  
+}
 
-    @media screen and (max-width: 880px) {
-      @include flexDirection(30px);
+.mid {
+  @include flexJustify;
+
+  @media screen and (max-width: 880px) {
+    @include flexDirection(30px);
+  }
+
+  .mid__text__title {
+    @include font(36px, 700, white);
+    margin-bottom: 28px;
+
+    @media screen and (max-width: 350px) {
+      font-size: 28px;
     }
+  }
 
-    .mid__text__title {
-      @include font(36px, 700, white);
-      margin-bottom: 28px;
+  .mid__text__par {
+    @include font(24px, 400, white);
+  }
 
-      @media screen and (max-width: 350px) {
-        font-size: 28px;
-      }
-    }
+  .mid__btn {
+    width: 228px;
+    height: 53px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    @include font(18px, 600, white);
 
-    .mid__text__par {
-      @include font(24px, 400, white);
-    }
-
-    .mid__btn {
-      width: 228px;
-      height: 53px;
-      border: 2px solid rgb(255, 255, 255);
-      background-color: transparent;
-      @include font(18px, 600, white);
-
-      &:hover {
-        cursor: pointer;
-        opacity: 0.6;
-      }
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
     }
   }
 }

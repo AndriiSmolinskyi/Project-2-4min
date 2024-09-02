@@ -630,12 +630,13 @@ body {
 .mid__bg {
   width: 100%;
   padding: 100px 0px;
-  background-image: url(../img/midbg.jpg);
+  background-image: url(../img/midbg.png);
   background-size: cover; /* Зображення буде масштабуватися, щоб повністю покрити фон */
   background-position: center; /* Зображення буде центроване */
   background-repeat: no-repeat; /* Забороняє повторення зображення */
 }
-.mid__bg .mid {
+
+.mid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,7 +645,7 @@ body {
           justify-content: space-between;
 }
 @media screen and (max-width: 880px) {
-  .mid__bg .mid {
+  .mid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -655,23 +656,23 @@ body {
     gap: 30px;
   }
 }
-.mid__bg .mid .mid__text__title {
+.mid .mid__text__title {
   font-size: 36px;
   font-weight: 700;
   color: white;
   margin-bottom: 28px;
 }
 @media screen and (max-width: 350px) {
-  .mid__bg .mid .mid__text__title {
+  .mid .mid__text__title {
     font-size: 28px;
   }
 }
-.mid__bg .mid .mid__text__par {
+.mid .mid__text__par {
   font-size: 24px;
   font-weight: 400;
   color: white;
 }
-.mid__bg .mid .mid__btn {
+.mid .mid__btn {
   width: 228px;
   height: 53px;
   border: 2px solid rgb(255, 255, 255);
@@ -680,7 +681,7 @@ body {
   font-weight: 600;
   color: white;
 }
-.mid__bg .mid .mid__btn:hover {
+.mid .mid__btn:hover {
   cursor: pointer;
   opacity: 0.6;
 }
